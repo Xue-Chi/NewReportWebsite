@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Assisted Living VR</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+		<header id="header" class="skel-layers-fixed">
+				<h1><a href="#">Team 10</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="Requirements.html">Requirements</a></li>
+						<li><a href="Research.html">Research</a></li>
+						<li><a href="HCI.html">HCI</a></li>
+						<li><a href="Prototype.html">Prototype</a></li>
+						<li><a href="Achievements.html">Achievements</a></li>
+						<li><a href="PlanForTerm2.html">Plan For Term 2</a></li>
+						<li><a href="Appendices.html">Appendices</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Main -->
+			<section id="main" class="wrapper style1">
+				<header class="major">
+					<h2>Research</h2>
+				</header>
+				<div class="container">
+					<section>
+						<h2>Related topics</h2>
+						<p></p>
+
+						<h2>Related technology</h2>
+						
+						<p>Initially, we were introduced to 'Oculus Go', which is the model that our client had specified 
+							for us to use. However, the model does not support a motion sensor. By contrast, our VR application
+							targets to register motion input to ensure maximal interaction between players. After having a 
+							brief conversation regarding the VR kit requirement with our client, we managed to upgrade our 
+							specified kit from 'Oculus Go' to 'Oculus Quest'. It not only includes motion sensor but also provides 
+							head and hand detection.</p>
+						<p>In terms of the online software, we chose unity because unity as game development kit and engine
+							designed supports 'Oculus Quest' and 3D Android development. Compared to other kits, unity is indeed 
+							developer-friendly with regard to the complexity and effectiveness especially during in a short time period.</p>
+						<p>From the related research articles we found, creating multiplayer VR games would still be 
+							problematic due to the lack of money and severe competition from traditional business game chain 
+							productions. </p>
+						<p>As unity only supports C sharp, we didn’t consider using other programming languages. When 
+							setting up the user interface, only creating C# scripts on visual studio would be fine. For the 
+							frameworks, Balsamiq is adopted to design the whole process. APIs of Oculus Quest, Watson Assistant 
+							and Pun2 are used as well to connect the hardware, to add NPCs and to implement the voice interface 
+							respectively. </p>
+						<p>We also applied Photon Voice 2 and Photon Unity Networking 2 as well. IBM Waston is adopted in speech to text, text to speech process.
+							Waston Assistant is presented in the area of Chatbot which means providing extra NPCs.</p>
+						<p>To sum up the final decision, we agreed to adopt Oculus Quest due to supporting motion sensor to 
+							be our hardware. Unity including C# would be software. Other additional but necessary functionalities 
+							would be implemented by using Watson Assistant and Pun2. </p>
+						<div class="image fit"><img src="images/IBM Watson.png" alt="" /></a></div>
+						<hr />
+							<section>
+								<h2>References</h2>
+								<ul class="alt">
+									<li><a href="https://developer.ibm.com/recipes/tutorials/create-a-3d-digital-human-with-ibm-watson-assistant-and-unity3d/">Create a 3D Digital Human</a></li>
+									<li><a href="https://docs.unity3d.com/ScriptReference/AudioSource.html">AudioSource</a></li>
+									<li><a href="https://docs.unity3d.com/ScriptReference/AudioClip.html">AudioClip</a></li>
+									<li><a href="https://cloud.ibm.com/apidocs/text-to-speech/text-to-speech?code=unity">Text to Speech</a></li>
+									<li><a href="https://cloud.ibm.com/apidocs/assistant/assistant-v2">Waston Assistant v2</a></li>
+								</ul>
+							</section>
+						</div>
+					</section>
+				</div>
+			</section>
+	</body>
+</html>

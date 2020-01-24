@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "restricted area"
+AuthUserFile /cs/student/www/2019/group10/.htpasswd
+Require valid-user
